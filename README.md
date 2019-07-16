@@ -3,8 +3,6 @@ Pretty Vim Python
 
 How to get a vim python colorscheme that doesn't suck.
 
-If this doesn't work for you or you see anything wrong, let me know eric.leschinski@hotmail.com and I'll see if its my fault or your fault.
-
 ![Imgur](http://i.imgur.com/W26xaan.png)
 
 This is my attempt to make the python syntax highlighting in Vim look like Textmate's.  It works on Ubuntu 12.10, for other distributions things may be different.
@@ -18,7 +16,7 @@ To deploy this on your system:  (I assume your username is 'el', replace it with
     sudo apt-get install vim
     sudo apt-get install git
     mkdir /home/el/.vim
-    git clone https://github.com/sentientmachine/Pretty-Vim-Python.git
+    git clone https://github.com/robert780612/Pretty-Vim-Python.git
 
 That puts a directory called Pretty-Vim-Python in your .vim directory.  Got to yank out the files and put them where they belong:
 
@@ -34,6 +32,7 @@ Edit your .vimrc:
     
 Put this code at the bottom of your .vimrc, create it if it doesn't exist:
 
+    set t_Co=256
     colorscheme molokai
     highlight Comment cterm=bold
 
